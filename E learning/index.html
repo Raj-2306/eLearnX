@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eLearnX - Your Learning Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Sidebar -->
+  <div class="flex min-h-screen">
+    <aside class="w-64 bg-white shadow-md p-6 hidden md:block">
+      <h2 class="text-2xl text-blue-600 font-bold mb-6">eLearnX</h2>
+      <nav>
+        <ul class="space-y-4">
+          <li><a href="index2.html">Dashboard</a></li>
+          <li><a href="#" class="text-blue-600 font-medium"> My Courses</a></li>
+          <li><a href="index3.html">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-semibold">My Courses</h1>
+        <input type="text" placeholder="Search courses..." class="p-2 border rounded-md w-64" />
+      </div>
+
+      <!-- Course Grid -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Course Card -->
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <iframe class="w-full h-40 rounded-md mb-3" src="https://www.youtube.com/embed/_uQrJ0TkZlc" frameborder="0" allowfullscreen></iframe>
+          <h3 class="text-lg font-bold">Python Basics</h3>
+          <p class="text-sm text-gray-500 mb-2">Instructor: Mosh</p>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 70%"></div>
+          </div>
+          <p class="text-sm text-blue-600 font-medium">70% Complete</p>
+        </div>
+
+        <!-- Duplicate for more courses -->
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <iframe class="w-full h-40 rounded-md mb-3" src="https://www.youtube.com/embed/3PHXvlpOkf4" frameborder="0" allowfullscreen></iframe>
+          <h3 class="text-lg font-bold">JavaScript Projects</h3>
+          <p class="text-sm text-gray-500 mb-2">Instructor: freeCodeCamp</p>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+            <div class="bg-green-500 h-2.5 rounded-full" style="width: 45%"></div>
+          </div>
+          <p class="text-sm text-green-600 font-medium">45% Complete</p>
+        </div>
+
+         <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <iframe class="w-full h-40 rounded-md mb-3" src="https://www.youtube.com/embed/ix9cRaBkVe0" frameborder="0" allowfullscreen></iframe>
+          <h3 class="text-lg font-bold">C++ Basics</h3>
+          <p class="text-sm text-gray-500 mb-2">Instructor: Brocode</p>
+          <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
+            <div class="bg-green-500 h-2.5 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-sm text-green-600 font-medium">0% Complete</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
